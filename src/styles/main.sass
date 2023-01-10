@@ -1,0 +1,35 @@
+@use "variables"
+@use "mixins"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: variables.$font-text
+
+body
+  background: variables.$grayColor-200
+  color: variables.$grayColor-400
+  max-width: 1300px
+  margin: auto
+  position: relative
+  width: 100%
+
+a, li 
+  text-decoration: none
+  color: variables.$grayColor-400
+
+h1
+  font-size: clamp( 2rem, 3rem + 1vw, 4.25rem )
+
+h2
+  font-size: clamp( 2rem, 2.125rem, 2.25rem )
+
+.container
+  padding-block: 180px
+
+.sections
+  padding-block: variables.$spacing-xl
+
+  @include mixins.sm
+    padding-block: variables.$spacing-lg

@@ -1,0 +1,107 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#navigation
+  position: absolute
+  z-index: 200
+  width: 100%
+  padding: 0 1.5rem
+  background: variables.$grayColor-600
+  height: variables.$headerHeight
+  backdrop-filter: blur(20px)
+  transform: translate(0)
+
+
+  //responsive md
+  @include mixins.md
+    padding: 0 3rem
+    transition: 0.3s ease all
+
+  .content
+    overflow: hidden
+    color: variables.$grayColor-200
+    margin: 0 auto
+    max-width: 1920px
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    z-index: 100
+
+    img
+      height: 43px
+
+    .nav
+      top: 80px
+      right: 100%
+      bottom: 0
+      margin-left: 1rem
+      width: 100%
+      height: 100vh
+      position: fixed
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      background: variables.$grayColor-500
+      transition: 0.3s ease transform
+
+      @include mixins.md
+        transform: none
+        flex-direction: row
+        background: transparent
+        width: auto
+        height: 100%
+        position: static
+
+    ul
+      list-style: none
+      width: 100%
+      padding: 0
+      display: flex
+      flex-direction: column
+      margin-bottom: variables.$spacing-md
+
+      @include mixins.md
+        flex-direction: row
+        align-items: center
+        margin-bottom: 0
+        padding-left: 50px
+
+      a
+        display: block
+        color: variables.$grayColor-200
+        font-size: 1.125rem
+        text-decoration: none
+        padding: 0.625rem 1.25rem
+        border-radius: 4px
+        transition: 0.3s ease all
+        width: 100%
+        transition: 0.5s
+
+        &.active
+          background: variables.$grayColor-400
+          color: variables.$grayColor-200
+
+        &:hover
+          background: variables.$grayColor-400
+          color: variables.$grayColor-200
+
+    .isMenu
+      transform: translate(100%)
+
+    .toggle
+      cursor: pointer
+      display: flex
+      align-items: center
+      font-size: 2rem
+      transition: 0.3s ease all
+      position: relative
+
+      &:hover
+        color: variables.$mainColor-300
+
+      //esconde o button toggle
+      @include mixins.md
+        display: none

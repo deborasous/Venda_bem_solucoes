@@ -1,0 +1,33 @@
+@use '../../styles/variables'
+
+#Error
+  width: 700px
+  margin: auto
+  margin-top: 4rem
+  text-align: center
+
+  .text
+    h1
+      font-size: 3.375rem
+      color: #f64e4e
+
+  img
+    width: 50%
+    margin-top: 1rem
+    margin-bottom: 1rem
+
+  .back
+    padding: 0.75rem
+    background: variables.$mainColor-300
+    width: 200px
+    border-radius: 10px
+    margin-inline: auto
+    margin-top: 1rem
+
+    &:hover
+      background: variables.$mainColor-200
+      transition: .5s
+
+    a
+      color: variables.$grayColor-100
+      font-weight: 500

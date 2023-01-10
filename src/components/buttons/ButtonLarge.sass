@@ -1,0 +1,21 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#btn-large
+  padding: 16px 48px
+  background: variables.$mainColor-300
+  color: variables.$grayColor-200
+  font-size: 1.25rem
+  font-weight: 600
+  letter-spacing: 1px
+  border: none
+  border-radius: 50px
+  transition: 0.5s
+
+  @include mixins.sm
+    display: block
+    margin-inline: auto
+
+  &:hover
+    background: variables.$grayColor-100
+    color: variables.$mainColor-300
