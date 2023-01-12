@@ -1,0 +1,63 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#footer
+  background: variables.$grayColor-600
+  color: variables.$grayColor-200
+
+  .container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))
+    gap: 2rem
+    font-size: 18px
+
+    h3
+      font-size: 1.5rem
+      color: variables.$grayColor-400
+
+    .dividerLg
+      width: 100%
+      height: 1px
+      background: variables.$mainColor-300
+      margin-block: 12px 30px
+
+    .dividerSmall
+      width: 20%
+      height: 1px
+      background: variables.$mainColor-300
+      margin-block: 12px 30px
+
+    .phone
+      display: flex
+      align-items: center
+      gap: 10px
+      margin-block: 10px
+      color: variables.$grayColor-200
+
+      &:hover
+        color: variables.$mainColor-300
+
+      svg
+        font-size: 24px
+
+    .socialMedia
+      .title
+        margin-top: 30px
+
+      .bgIcon
+        background-image: linear-gradient(rgb(253, 244, 151) 0%,rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214 36 159) 60%, rgb(40, 90, 235) 100%)
+        color: variables.$grayColor-100
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.5s
+
+        &:hover
+          background-image: linear-gradient(rgb(40, 90, 235) 0%, rgb(40, 90, 235) 1%,rgb(214 36 159) 40%, rgb(253, 89, 73) 70%, rgb(255, 157, 0) 100%, )
+          color: variables.$grayColor-100
+
+        svg
+          font-size: 32px

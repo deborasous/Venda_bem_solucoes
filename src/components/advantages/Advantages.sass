@@ -1,11 +1,15 @@
 @use '../../styles/variables'
+@use '../../styles/mixins'
 
 #advantages
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
   gap: 1rem
   max-width: 1100px
   margin: auto
+  padding: 30px variables.$spacing-lg 0
+  @include mixins.sm
+    padding: 30px variables.$spacing-sm 0
 
   .advantage
     display: flex
@@ -13,7 +17,7 @@
     background: variables.$grayColor-300
     max-width: 340px
     padding: 10px 12px
-    border-radius: 10px
+    border-radius: 6px
 
     svg
       font-size: 32px
@@ -23,9 +27,6 @@
     .text
       display: grid
       gap: 4px
-
-      h4
-        font-size: 16px
 
       p
         font-size: 14px

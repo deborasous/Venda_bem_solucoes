@@ -13,14 +13,16 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className='container'>
+      <main>
         <Advantages />
-        <section className='sections'>
-          <h2>Esta é a home</h2>
-          <div>
-            <p>Aqui vai para produtos</p>
-          </div>
-        </section>
+        <div className='container'>
+          <section>
+            <h2>Esta é a home</h2>
+            <div>
+              <p>Aqui vai para produtos</p>
+            </div>
+          </section>
+        </div>
       </main>
     </>
   );

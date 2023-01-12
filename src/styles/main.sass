@@ -16,6 +16,7 @@ body
   width: 100%
 
 a, li 
+  list-style: none
   text-decoration: none
   color: variables.$grayColor-400
 
@@ -25,11 +26,30 @@ h1
 h2
   font-size: clamp( 2rem, 2.125rem, 2.25rem )
 
+h3
+  font-size: 1.5rem
+  letter-spacing: 1px
+
+h4
+  font-size: 1.25rem
+
+h5
+  font-size: 1rem
+
+p
+  line-height: 130%
+
 .container
-  padding-block: 180px
+  padding-top: 100px
+  padding-bottom: 50px
+  padding-inline: variables.$spacing-lg
+
+  @include mixins.sm
+    padding-top: 60px
+    padding-inline: variables.$spacing-sm
 
 .sections
   padding-block: variables.$spacing-xl
 
   @include mixins.sm
-    padding-block: variables.$spacing-lg
+    padding-block: variables.$spacing-sm

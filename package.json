@@ -9,14 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.1",
     "sort-by": "^1.2.0",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
