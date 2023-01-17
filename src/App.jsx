@@ -16,16 +16,16 @@ import Customer from "./pages/customer/Customer";
 import News from "./pages/news/News";
 
 function App() {
-  return (
-    <div className='App'>
+   return (
+    <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/produtos' element={<Product />} />
-        <Route path='/sobre' element={<AboutUs />} />
-        <Route path='/seja-um-cliente' element={<Customer />} />
-        <Route path='/noticias' element={<News />} />
-        <Route path='*' element={<Error />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/produtos" element={<Product />} />
+        <Route path="/sobre" element={<AboutUs />} />
+        <Route path="/seja-um-cliente" element={<Customer />} />
+        <Route path="/noticias" element={<News />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>

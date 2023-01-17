@@ -8,7 +8,7 @@ import "./Advantages.sass";
 
 const Advantages = () => {
   return (
-    <div id='advantages'>
+    <section id='advantages'>
       <div className='advantage'>
         <BsTruck className='icons' />
         <div className='text'>
@@ -30,7 +30,7 @@ const Advantages = () => {
           <p>Mix de produtos com altas taxas de vendas</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

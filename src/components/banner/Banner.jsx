@@ -16,23 +16,23 @@ import { slideHeaderData } from "../../data/SwiperData";
 
 //import sass
 import "./Banner.sass";
-import ButtonLarge from "../buttons/ButtonLarge";
+import ButtonLarge from "../buttons/buttonLarge/ButtonLarge";
 
 const Banner = () => {
   const size = useWindowSize();
 
   return (
     <>
-      <div id='header-swiper'>
-        <div className='title'>
+      <div id="header-swiper">
+        <div className="title">
           <h1>
             Você Produz, <br />
             Nós vendemos
           </h1>
-          <ButtonLarge className='btn-call' />
+          <ButtonLarge className="btn-call" />
         </div>
         <Swiper
-          className='header-swiper'
+          className="header-swiper"
           spaceBetween={30}
           centeredSlides={true}
           modules={[Autoplay, Pagination]}
@@ -47,11 +47,11 @@ const Banner = () => {
         >
           {slideHeaderData.map((slide, index) => {
             return (
-              <SwiperSlide className='slide' key={index}>
-                <div className='text'>
+              <SwiperSlide className="slide" key={index}>
+                <div className="text">
                   <p>{slide.desc}</p>
                 </div>
-                <div className='image'>
+                <div className="image">
                   {size.width > 800 ? (
                     <img src={slide.banner} alt={slide.brand} />
                   ) : (

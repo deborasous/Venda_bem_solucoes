@@ -10,9 +10,9 @@ $breackpoints: ('sm': 800px, 'md': 800px,'lg': 960px,'xl': 1300px,)
     @content
 
 @mixin lg
-  @media (min-width: map-get($breackpoints, 'lg'))
+  @media (max-width: map-get($breackpoints, 'lg'))
     @content
 
 @mixin xl
-  @media (min-width: map-get($breackpoints, 'xl'))
+  @media (max-width: map-get($breackpoints, 'xl'))
     @content

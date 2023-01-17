@@ -108,6 +108,7 @@ const FormContact = () => {
           />
           <p className="messageError">{errors.name?.message}</p>
         </div>
+
         <div className="fields">
           <label className="sr-only" htmlFor="email">
             Email
@@ -121,6 +122,7 @@ const FormContact = () => {
           />
           <p className="messageError">{errors.email?.message}</p>
         </div>
+
         <div className="fields">
           <label className="sr-only " htmlFor="phone">
             Telefone
@@ -140,6 +142,7 @@ const FormContact = () => {
           />
           <p className="messageError">{errors.phone?.message}</p>
         </div>
+
         <div className="fields">
           <label className="sr-only" htmlFor="message">
             Telefone
@@ -153,6 +156,7 @@ const FormContact = () => {
             {...register("message")}
           />
         </div>
+
         <div>
           <ButtonForm type="submit" />
         </div>

@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 //IMPORT SASS
 import "./styles/main.sass";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
     <React.StrictMode>

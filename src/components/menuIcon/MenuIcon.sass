@@ -1,0 +1,36 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#menuIcon
+
+  .containerSwiper
+    padding-block: variables.$spacing-sm variables.$spacing-md 
+    padding-left: 12px
+
+    .card
+      transition: 0.2s
+      max-width: 140px
+      padding: 16px
+      border-radius: 6px
+      text-align: center
+      background: variables.$grayColor-100
+      box-shadow: 2px 6px 12px -12px #a6a6a6
+      border: 1px solid variables.$grayColor-300
+      transition: 0.2s
+
+      &:hover
+        -webkit-box-shadow: 0px 10px 13px -5px #303030, 1px 1px 9px 3px rgba(59,59,59,0)
+        box-shadow: 0px 4px 15px -7px #4d4d4d, 1px 1px 9px 3px rgba(59,59,59,0)
+        transform: scale(1.03)
+
+      .icon
+        display: block
+        font-size: 56px
+        margin: auto
+        color: variables.$mainColor-300
+
+        svg
+          color: variables.$mainColor-300
+
+      h5
+        margin-top: 10px
