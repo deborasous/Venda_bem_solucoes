@@ -4,8 +4,11 @@ import React from "react";
 
 //import components
 import Advantages from "../../components/advantages/Advantages";
+import BannerBody from "../../components/bannerBody/BannerBody";
+import Brands from "../../components/brands/Brands";
 import FeaturedProdCard from "../../components/featuredProducts/FeaturedProdCard";
 import Header from "../../components/header/Header";
+import InfoHome from "../../components/infoHome/InfoHome";
 import MenuIcon from "../../components/menuIcon/MenuIcon";
 
 //import sass
@@ -17,11 +20,11 @@ const Home = () => {
       <Header />
       <main>
         <Advantages />
-        <section className="container">
-          <h2>Produtos</h2>
-          <MenuIcon />
-          <FeaturedProdCard />
-        </section>
+        <MenuIcon />
+        <FeaturedProdCard />
+        <BannerBody />
+        <Brands />
+        <InfoHome />
       </main>
     </>
   );

@@ -2,13 +2,16 @@
 @use '../../styles/mixins'
 
 #menuIcon
+  padding: 50px variables.$spacing-lg 0
+
+  @include mixins.sm
+    padding-inline: variables.$spacing-sm
 
   .containerSwiper
-    padding-block: variables.$spacing-sm variables.$spacing-md 
+    padding-block: variables.$spacing-sm variables.$spacing-md
     padding-left: 12px
 
     .card
-      transition: 0.2s
       max-width: 140px
       padding: 16px
       border-radius: 6px

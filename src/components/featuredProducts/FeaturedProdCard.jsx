@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 // Import Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// import required modules
+import { Autoplay, Pagination } from "swiper";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -42,10 +45,19 @@ const FeaturedProdCard = () => {
         <Swiper
           className="containerSwiper"
           spaceBetween={20}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
           navigation={true}
+          modules={[Autoplay, Pagination]}
+          loop={true}
           loopedSlides={7}
           slidesPerView={5}
-          loop={true}
           breakpoints={{
             800: {
               width: 800,
@@ -73,8 +85,8 @@ const FeaturedProdCard = () => {
                   <div className="textCard">
                     <p>{e?.data?.description}</p>
                     <h5>{e?.data?.title}</h5>
-                    <ButtonSmall />
                   </div>
+                  <ButtonSmall />
                 </NavLink>
               </SwiperSlide>
             );

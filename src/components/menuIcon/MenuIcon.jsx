@@ -36,7 +36,8 @@ import "./MenuIcon.sass";
 const MenuIcon = () => {
   return (
     <>
-      <div id="menuIcon">
+      <section id="menuIcon">
+        <h2>Produtos</h2>
         <Swiper
           className="containerSwiper"
           spaceBetween={20}
@@ -135,7 +136,7 @@ const MenuIcon = () => {
             </NavLink>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </section>
     </>
   );
 };

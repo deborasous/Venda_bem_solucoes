@@ -11,11 +11,12 @@ body
   background: variables.$grayColor-200
   color: variables.$grayColor-400
   max-width: 1300px
+  min-width: 400px
+  width: 100%
   margin: auto
   position: relative
-  width: 100%
 
-a, li 
+a, li
   list-style: none
   text-decoration: none
   color: variables.$grayColor-400
@@ -40,8 +41,7 @@ p
   line-height: 130%
 
 .container
-  padding-top: 100px
-  padding-bottom: 50px
+  padding-block: 50px
   padding-inline: variables.$spacing-lg
 
   @include mixins.sm
@@ -53,3 +53,10 @@ p
 
   @include mixins.sm
     padding-block: variables.$spacing-sm
+
+.swiper-pagination-bullet
+  height: 10px
+  width: 10px
+
+.swiper-pagination-bullet
+  --swiper-theme-color: #FFAA01

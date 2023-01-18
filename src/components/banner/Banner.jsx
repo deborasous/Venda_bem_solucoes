@@ -12,7 +12,7 @@ import "swiper/css/effect-fade";
 import { Autoplay, Pagination } from "swiper";
 
 //import swiperData
-import { slideHeaderData } from "../../data/SwiperData";
+import { slideHeaderData } from "../../data/slideHeaderData";
 
 //import sass
 import "./Banner.sass";
@@ -27,7 +27,7 @@ const Banner = () => {
         <div className="title">
           <h1>
             Você Produz, <br />
-            Nós vendemos
+            <span> Nós vendemos</span>
           </h1>
           <ButtonLarge className="btn-call" />
         </div>
