@@ -12,23 +12,22 @@ import Error from "./components/erro/Erro";
 import Home from "./pages/home/Home";
 import Product from "./pages/product/Product";
 import AboutUs from "./pages/about/AboutUs";
-import Customer from "./pages/customer/Customer";
-import News from "./pages/news/News";
+import AdmFirebase from "./pages/uploadFirebase/AdmProduct";
+import Header from "./components/header/Header";
 
 function App() {
-   return (
-    <div className="App">
+  return (
+    <>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/produtos" element={<Product />} />
         <Route path="/sobre" element={<AboutUs />} />
-        <Route path="/seja-um-cliente" element={<Customer />} />
-        <Route path="/noticias" element={<News />} />
+        <Route path="/adm" element={<AdmFirebase />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

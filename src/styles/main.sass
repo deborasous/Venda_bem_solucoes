@@ -7,6 +7,9 @@
   box-sizing: border-box
   font-family: variables.$font-text
 
+html
+  scroll-behavior: smooth
+
 body
   background: variables.$grayColor-200
   color: variables.$grayColor-400
@@ -40,12 +43,16 @@ h5
 p
   line-height: 130%
 
-.container
-  padding-block: 50px
+.containerBlock
+  padding-block: 100px 50px
+  @include mixins.sm
+    padding-block: 50px 20px
+
+.containerInline
   padding-inline: variables.$spacing-lg
 
   @include mixins.sm
-    padding-top: 60px
+    padding-top: 20px
     padding-inline: variables.$spacing-sm
 
 .sections
@@ -53,6 +60,14 @@ p
 
   @include mixins.sm
     padding-block: variables.$spacing-sm
+
+.sections1
+  padding-block: variables.$spacing-xl
+  padding-inline: variables.$spacing-lg
+
+  @include mixins.sm
+    padding-block: variables.$spacing-sm
+    padding-inline: variables.$spacing-sm
 
 .swiper-pagination-bullet
   height: 10px

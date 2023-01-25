@@ -25,8 +25,15 @@ const Brands = () => {
           navigation={true}
           modules={[Autoplay, Pagination]}
           loop={true}
-          loopedSlides={8}
+          loopedSlides={7}
           slidesPerView={6}
+          breakpoints={{
+            570: {
+              width: 570,
+              loopedSlides: 4,
+              slidesPerView: 2,
+            },
+          }}
         >
           {imageBrandData.map((item, index) => {
             return (

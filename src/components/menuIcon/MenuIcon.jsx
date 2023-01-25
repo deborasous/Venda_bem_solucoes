@@ -13,6 +13,7 @@ import {
   GiHotMeal,
   GiWineBottle,
   GiSittingDog,
+  GiFrenchFries,
 } from "react-icons/gi";
 
 import { FaCarrot } from "react-icons/fa";
@@ -37,7 +38,6 @@ const MenuIcon = () => {
   return (
     <>
       <section id="menuIcon">
-        <h2>Produtos</h2>
         <Swiper
           className="containerSwiper"
           spaceBetween={20}
@@ -101,7 +101,7 @@ const MenuIcon = () => {
           </SwiperSlide>
           <SwiperSlide className="card">
             <NavLink to="/produtos">
-              <GiHotMeal className="icon" />
+              <GiFrenchFries className="icon" />
               <h5>Congelados</h5>
             </NavLink>
           </SwiperSlide>

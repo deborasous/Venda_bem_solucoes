@@ -1,7 +1,5 @@
 import React from "react";
 
-//import
-
 //import components
 import Advantages from "../../components/advantages/Advantages";
 import BannerBody from "../../components/bannerBody/BannerBody";
@@ -23,7 +21,6 @@ const Home = () => {
         <MenuIcon />
         <FeaturedProdCard />
         <BannerBody />
-        <Brands />
         <InfoHome />
       </main>
     </>

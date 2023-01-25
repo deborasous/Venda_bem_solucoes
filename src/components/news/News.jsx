@@ -2,8 +2,8 @@ import React from "react";
 
 const News = () => {
   return (
-    <main className='container'>
-      <h1>Este é Notícias</h1>
+    <main id="customer" className="sections1">
+      <h1>clientes</h1>
 
       <div>
         <p>Aqui vai para produtos</p>

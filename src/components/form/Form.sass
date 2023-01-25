@@ -3,7 +3,7 @@
 
 .form
   background: variables.$grayColor-300
-  padding: 40px 20px 70px 20px
+  padding: 30px 20px 40px
   border-radius: 6px
   position: relative
   @include mixins.sm
@@ -27,11 +27,9 @@
     border: 1px solid variables.$grayColor-300
     background: variables.$grayColor-100
     border-radius: 6px
-    margin-bottom: 32px
+    margin-bottom: 1.7rem
     border: none
     outline: none
-
-
 
     &:focus
       border: 1px solid variables.$mainColor-300
@@ -57,5 +55,6 @@
 
   .sendMessage
     position: absolute
-    margin-top: 16px
-    left: 45px
+    margin-top: 10px
+    left: 50%
+    transform: translateX(-50%)

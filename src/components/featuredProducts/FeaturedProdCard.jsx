@@ -42,6 +42,7 @@ const FeaturedProdCard = () => {
   return (
     <>
       <div id="producCard">
+        <h2>Produtos</h2>
         <Swiper
           className="containerSwiper"
           spaceBetween={20}
@@ -56,22 +57,19 @@ const FeaturedProdCard = () => {
           navigation={true}
           modules={[Autoplay, Pagination]}
           loop={true}
-          loopedSlides={7}
+          loopedSlides={6}
           slidesPerView={5}
           breakpoints={{
             800: {
               width: 800,
+              loopedSlides: 5,
               slidesPerView: 4,
             },
             // when window width is >= 768px
             768: {
               width: 768,
-              slidesPerView: 2,
-            },
-            // when window width is >= 640px
-            360: {
-              width: 360,
-              slidesPerView: 1,
+              loopedSlides: 4,
+              slidesPerView: 3,
             },
           }}
         >

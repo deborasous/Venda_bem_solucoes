@@ -11,7 +11,6 @@
   backdrop-filter: blur(20px)
   transform: translate(0)
 
-
   //responsive md
   @include mixins.md
     padding: 0 3rem
@@ -74,19 +73,18 @@
         color: variables.$grayColor-200
         font-size: 1.125rem
         text-decoration: none
-        padding: 0.625rem 1.25rem
-        border-radius: 4px
+        padding: 0.5rem 1rem
         transition: 0.3s ease all
         width: 100%
         transition: 0.5s
+        border-bottom: 2px solid variables.$grayColor-600
 
         &.active
-          background: variables.$grayColor-400
-          color: variables.$grayColor-200
+          border-bottom: 2px solid variables.$mainColor-200
+          color: variables.$mainColor-200
 
         &:hover
-          background: variables.$grayColor-400
-          color: variables.$grayColor-200
+          color: variables.$mainColor-200
 
     .isMenu
       transform: translate(100%)

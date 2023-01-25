@@ -6,6 +6,9 @@ import imageSwiperThree from "../assets/banners/slideSeafood.png";
 //import images banner small
 import ImageSlideSmall from "../assets/banners/slideBgSmall.svg";
 
+// *** Images banner Body
+import imageBanner from "../assets/banners/bannerBody.svg";
+import imageBannerSmall from "../assets/banners/bannerBodySmall.svg";
 
 export const slideHeaderData = [
   {
@@ -28,5 +31,13 @@ export const slideHeaderData = [
     desc: "Frutos do mar selecionados e de qualidade e com marcas variadas, você encontra na Venda Bem Soluções",
     banner: imageSwiperThree,
     bannerSmall: ImageSlideSmall,
+  },
+];
+
+export const slideBody = [
+  {
+    id: 1,
+    banner: imageBanner,
+    bannerSmall: imageBannerSmall,
   },
 ];

@@ -1,20 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //import image Error
-import ImageError from "../../assets/ImageError.svg";
+import ImageError from "../../assets/general/ImageError.svg";
 
 //import sass
 import "../erro/error.sass";
 
 const Erro = () => {
+  const navigate = useNavigate();
+
+  const backHome = () => {
+    navigate("/");
+  };
+
   return (
-    <section id='Error'>
-      <div className='text'>
+    <section id="Error" className="containerBlock">
+      <div className="text">
         <h1>Error 404</h1>
         <img
           src={ImageError}
-          alt='Página não encontrada, retorne para a home'
+          alt="Página não encontrada, retorne para a home"
         />
         <p>
           Desculpe, não sei como chegou aqui, mas está página não existe. <br />
@@ -22,9 +28,9 @@ const Erro = () => {
         </p>
       </div>
       <div>
-        <div className='back'>
-          <Link to='/'>Voltar</Link>
-        </div>
+        <a href="#home" className="back" onClick={backHome}>
+          Voltar
+        </a>
       </div>
     </section>
   );

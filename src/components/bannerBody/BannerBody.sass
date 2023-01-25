@@ -3,25 +3,31 @@
 
 #bannerBody
   position: relative
-  padding-block: 100px 0
-  
+
   .imageBanner
     min-width: 370px
     max-width: 1300px
+    margin-bottom: 20px
     position: relative
 
     img
       width: 100%
+      height: 100%
 
     .textBanner
       color: variables.$grayColor-300
-      font-size: 5vw
+      font-size: 4.5vw
       font-family: 'Pacifico', cursive
       margin-left: variables.$spacing-lg
       width: 80%
       position: absolute
-      top: 40%
-      transform: translateY(-30%)
+      top: 50%
+      transform: translateY(-50px)
+
+      @include mixins.sm
+        margin-left: variables.$spacing-sm
+        top: 50%
+        transform: translateY(-35px)
 
       @include mixins.xl
         font-size: 54px

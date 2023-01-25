@@ -1,0 +1,43 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#card
+  h2
+    margin-bottom: 2rem
+    padding: 50px variables.$spacing-lg 0
+    @include mixins.sm
+      padding-inline: variables.$spacing-sm
+  .containerCard
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    gap: 1rem
+
+    .card
+      width: 320px
+      padding: 16px
+      border-radius: 6px
+      background: variables.$grayColor-100
+      box-shadow: 2px 6px 12px -12px #a6a6a6
+      border: 1px solid variables.$grayColor-300
+      text-align: center
+      transition: 0.2s
+      @include mixins.xs
+        margin: auto
+
+      &:hover
+        -webkit-box-shadow: 0px 10px 13px -5px #303030, 1px 1px 9px 3px rgba(59,59,59,0)
+        box-shadow: 0px 4px 15px -7px #4d4d4d, 1px 1px 9px 3px rgba(59,59,59,0)
+        transform: scale(1.03)
+
+      .imageCard
+        height: 140px
+        max-width: 200px
+        margin: auto
+
+        img
+          height: 100%
+
+      .textCard
+        display: grid
+        gap: 4px
+        margin-block: 10px 16px

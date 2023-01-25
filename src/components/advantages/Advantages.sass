@@ -7,18 +7,20 @@
   gap: 1rem
   max-width: 1150px
   margin: auto
-  padding: 30px variables.$spacing-lg 0
+  padding: 20px variables.$spacing-lg 0
   @include mixins.sm
     padding-inline: variables.$spacing-sm
     margin: auto
+  @include mixins.xs
+    grid-template-columns: 1fr
 
   .advantage
     display: flex
     align-items: center
     background: variables.$grayColor-300
-    max-width: 340px
     padding: 10px 12px
     border-radius: 6px
+
 
     svg
       font-size: 32px

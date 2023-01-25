@@ -80,7 +80,7 @@ const FormContact = () => {
     if (saveDataForm) {
       setStatus({
         type: "success",
-        mensagem: "Usuário cadastrado com sucesso!",
+        mensagem: "Mensagem enviada!",
       });
       setUser({
         name: "",
@@ -158,12 +158,12 @@ const FormContact = () => {
         </div>
 
         <div>
-          <ButtonForm type="submit" />
+          <ButtonForm type="submit"/>
         </div>
       </form>
       {/* register user sucess/error message */}
       {status.type === "success" ? (
-        <p className="sendMessage" style={{ color: "green" }}>
+        <p className="sendMessage" style={{ color: "green", fontSize: '14px' }}>
           {status.mensagem}
         </p>
       ) : (

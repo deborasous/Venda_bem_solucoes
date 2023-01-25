@@ -1,5 +1,10 @@
 //breackpoints
-$breackpoints: ('sm': 800px, 'md': 800px,'lg': 1300px,'xl': 1300px,)
+$breackpoints: ('xs': 565px, 'sm': 800px, 'md': 800px,'lg': 1300px,'xl': 1300px,)
+
+
+@mixin xs
+  @media (max-width: map-get($breackpoints, 'xs'))
+    @content
 
 @mixin sm
   @media (max-width: map-get($breackpoints, 'sm'))

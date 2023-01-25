@@ -8,7 +8,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
 //import logo
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/general/Logo.png";
 
 //import sass
 import "./Navbar.sass";
@@ -50,43 +50,43 @@ const Navbar = () => {
   };
 
   return (
-    <div id='navigation'>
-      <div className='content'>
-        <div className='logo'>
-          <img src={Logo} alt='Logo Venda Bem Soluções' />
+    <div id="navigation">
+      <div className="content">
+        <div className="logo">
+          <img src={Logo} alt="Logo Venda Bem Soluções" />
         </div>
         <nav
           className={`${"nav"} ${menuOpen && size.width < 800 ? "isMenu" : ""}`}
         >
           <ul>
             <li>
-              <NavLink to='/' onClick={menuToggleHandler}>
+              <NavLink to="/" onClick={menuToggleHandler}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to='/produtos' onClick={menuToggleHandler}>
+              <NavLink to="/produtos" onClick={menuToggleHandler}>
                 Produtos
               </NavLink>
             </li>
             <li>
-              <NavLink to='/sobre' onClick={menuToggleHandler}>
+              <NavLink to="/sobre" onClick={menuToggleHandler}>
                 Sobre
               </NavLink>
             </li>
             <li>
-              <NavLink to='/seja-um-cliente' onClick={menuToggleHandler}>
+              <a href="#customer" onClick={menuToggleHandler}>
                 Seja um Cliente
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to='/noticias' onClick={menuToggleHandler}>
+              <NavLink to="/noticias" onClick={menuToggleHandler}>
                 Notícias
               </NavLink>
             </li>
           </ul>
         </nav>
-        <div className='toggle'>
+        <div className="toggle">
           {menuOpen ? (
             <BiMenuAltRight onClick={menuToggleHandler} />
           ) : (
